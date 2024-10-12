@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css">
     <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/fontawesome.min.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/UFlogo.jpg">
+    <script src="script.js"></script>
     <title>UFoundation</title>
 </head>
 <body>
@@ -22,78 +23,117 @@
                 <li><a href="blog-news.html">Blog/News</a></li>
                 <li><a href="contact.html">Contact us</a></li>
             </ul>
-            <button type="submit">Donate Now</button>
+            <a href="http://"><button type="button" id="donate-btn">Donate Now</button></a>
+            
         </nav>
     </header>
 
     <main>
         <section class="intro">
-            <video src="videos/Ranked No.1 In Providing Opportunities For Young People .mp4" autoplay></video>
-            <h1>Welcome to You Foundations where you get to <span class="tagline">"Be You, do You, and no one else"</span></h1>
-            <p>Empowering marginalized communities through education, health and advocacy.</p>
-            <button type="submit" id="learn-more-btn">Get Involved</button>
-            <button type="submit" id="donate-btn">Make a Donation</button>
+            <video autoplay loop>
+                <source src="videos/Ranked No.1 In Providing Opportunities For Young People .mp4" type="video/mp4">
+            </video>
+            <div class="conts">
+                <h1><span id="wlc">Welcome to You Foundations</span><br>where you get to <span id="tagline">"Be You, do You, and no one else"</span></h1>
+                <p>We Empower marginalized communities<br> through education, health and advocacy.</p>
+                <button type="submit" id="learn-more-btn">Get Involved</button><br>
+                <button type="submit" id="donate-btn">Make a Donation</button>
+                
+            </div>
         </section>
 
         <section class="contents">
-            <a href="http://#">
-                <h2>ESTABLISHMENTS</h2>
-                <p>You Foundations is Non governmental organisation formed<p>
-            </a>
-            <a href="http://#">
-                <h2>MISSION STATEMENT</h2>
-                <p>You Foundations is Non governmental organisation formed</p>
-            </a>
-            <a href="http://#">
-                <h2>VISION STATEMENT</h2>
-                <p>You Foundations is Non governmental organisation formed</p>
-            </a>
-            <a href="http://#">
-                <h2>OBJECTIVES</h2>
-                <p>You Foundations is Non governmental organisation formed</p>
-            </a>
-            <a href="http://#">
-                <h2>CORE VALUES</h2>
-                <p>You Foundations is Non governmental organisation formed</p>
-            </a>
-            <a href="http://#">
-                <h2>TARGET AUDIENCE</h2>
-                <p>You Foundations is Non governmental organisation formed</p>
-            </a>
-            <a href="http://#">
-                <h2>PROGRAMS AND SERVICES</h2>
-                <p>You Foundations is Non governmental organisation formed</p>
-            </a>
-            <a href="http://#">
-                <h2>DETAILS OF EXECUTIVES</h2>
-                <p>You Foundations is Non governmental organisation formed</p>
-            </a>
+            <div class="slide-images">
+                <div class="slides">
+                    <div class="slide"><img src="images/blackidstare.jpg" alt="" srcset=""></div>
+                    <div class="slide"><img src="images/ladiesblur.jpg" alt="" srcset=""></div>
+                    <div class="slide"><img src="images/youthstudying.jpg" alt="" srcset=""></div>
+                    <div class="slide"><img src="images/ritinonground.jpg" alt="" srcset=""></div>
+                    <div class="slide"><img src="images/ythladieshandinair.jpg" alt="" srcset=""></div>
+                </div>
+            </div>
+            <div class="individual-contents">
+                <div class="ind-contents">
+                    <a href="about.html">
+                        <h2>ESTABLISHMENTS</h2>
+                        <p>You Foundations is Non governmental organisation formed</p>
+                    </a>
+                </div>
+                <div class="ind-contents">
+                    <a href="drive.html">
+                        <h2>MISSION STATEMENT</h2>
+                        <p>You Foundations is Non governmental organisation formed</p>
+                    </a>
+                </div>
+                <div class="ind-contents">
+                    <a href="drive.html">
+                        <h2>VISION STATEMENT</h2>
+                        <p>You Foundations is Non governmental organisation formed</p>
+                    </a>
+                </div>
+                <div class="ind-contents">
+                    <a href="drive.html">
+                        <h2>OBJECTIVES</h2>
+                        <p>You Foundations is Non governmental organisation formed</p>
+                    </a>
+                </div>
+                <div class="ind-contents">
+                    <a href="about.html">
+                        <h2>CORE VALUES</h2>
+                        <p>You Foundations is Non governmental organisation formed</p>
+                    </a>
+                </div>
+                <div class="ind-contents">
+                    <a href="drive.html">
+                        <h2>TARGET AUDIENCE</h2>
+                        <p>You Foundations is Non governmental organisation formed</p>
+                    </a>
+                </div>
+                <div class="ind-contents">
+                    <a href="programs.html">
+                        <h2>PROGRAMS AND SERVICES</h2>
+                        <p>You Foundations is Non governmental organisation formed</p>
+                    </a>
+                </div>
+                <div class="ind-contents">
+                    <a href="about.html">
+                        <h2>DETAILS OF EXECUTIVES</h2>
+                        <p>You Foundations is Non governmental organisation formed</p>
+                    </a>
+                </div>
+            </div>
+            
         </section>
     </main>
     <footer>
-        <div class="links">
-            <h3>Quick Links</h3>
-            <a href="http://">Home</a>
-            <a href="http://">About Us</a>
-            <a href="http://">Programs</a>
-            <a href="http://">Get Involved</a>
-            <a href="http://">Blog/News</a>
+        <div class="footer-contents">
+            <div class="links">
+                <h3>Quick Links</h3>
+                <a href="http://">Home</a>
+                <a href="http://">About Us</a>
+                <a href="http://">Programs</a>
+                <a href="http://">Get Involved</a>
+                <a href="http://">Blog/News</a>
+            </div>
+            <div class="contact-infos">
+                <h3>Contact Us</h3>
+                <a href="http://">Facebook</a>
+                <a href="http://">Instagram</a>
+                <a href="http://">Twitter</a>
+                <a href="http://">LinkedIn</a>
+                <a href="tel:+233599489913">+233 599 489 913</a>
+                <a href="mailto:hashesed@gmail.com">hashesed@gmail.com</a>
+    
+                <h4>Address: 123 Foundations Street, city, Country</h4>
+            </div>
+            
+            <div class="volunts">
+                <a id="involvement" href="http://">Get Involved</a>
+                <a id="donation" href="http://">DONATE</a>
+            </div>
         </div>
-        <div class="contact-infos">
-            <h3>Contact Us</h3>
-            <a href="http://">Facebook</a>
-            <a href="http://">Instagram</a>
-            <a href="http://">Twitter</a>
-            <a href="http://">LinkedIn</a>
-            <a href="tel:+233599489913">+233 599 489 913</a>
-            <a href="mailto:hashesed@gmail.com">hashesed@gmail.com</a>
-
-            <h4>Address: 123 Foundations Street, city, Country</h4>
-        </div>
-        
-        <div class="volunts">
-            <a href="http://">Get Involved</a>
-            <a href="http://">DONATE</a>
+        <div class="copyright">
+            <p>&copy; 2024 You Foundation. All rights reserved.</p>
         </div>
     </footer>
 </body>
