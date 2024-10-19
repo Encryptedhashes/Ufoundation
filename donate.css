@@ -1,0 +1,112 @@
+body {
+  background: linear-gradient(to top, rgba(128, 128, 128, 0.7), rgba(255, 255, 255, 0.9)), url("images/UFlogo.jpeg");
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  height: 100vh;
+  margin: 0;
+  padding: 3em;
+}
+
+.back-to-home {
+  margin: 4em 0em 0em 2em;
+}
+
+.donation-container {
+  margin: 0cm 0cm 0cm 8cm;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+  color: #555;
+}
+
+.donation-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.donation-form label {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.donation-form input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 70%;
+  align-self: center;
+}
+
+.donation-form textarea,
+.donation-form button {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 80%;
+  align-self: center;
+}
+
+.payment-options {
+  display: flex;
+  gap: 1em;
+  justify-content: space-around;
+}
+
+.payment-options button {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.payment-options button:hover {
+  border: 2px solid black;
+}
+
+#paypal-btn {
+  background-color: #007BFF;
+}
+
+#paypal-btn:hover {
+  background-color: rgba(7, 3, 252, 0.596);
+}
+
+#vodafone-btn {
+  background-color: #ff0000;
+}
+
+#vodafone-btn:hover {
+  background-color: #fc030398;
+}
+
+#mtn-btn {
+  background-color: #fdec02;
+}
+
+#mtn-btn:hover {
+  background-color: #fcf80398;
+}
+
+#donate-btn {
+  background: #38fa31;
+  color: #ffd900;
+  font-size: 2rem;
+  font-weight: 500;
+}

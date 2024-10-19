@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="donate.css">
+    <link rel="shortcut icon" href="images/UFlogo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css">
+    <title>Support UFoundation</title>
+</head>
+<body>
+    <body>
+        <a href="index.html" class="back-to-home"><i class="fa fa-arrow-left"></i>Home</a>
+        <div class="donation-container">
+            <h1>Support Our Cause</h1>
+            <p>Your donations help us continue our mission. Any amount is appreciated!</p>
+            <form class="donation-form">
+                <label for="donation-amount">Donation Amount</label>
+                <input type="number" id="donation-amount" name="donation-amount" required>
+    
+                <label for="donor-name">Name</label>
+                <input type="text" id="donor-name" name="donor-name" required>
+    
+                <label for="donor-email">Email</label>
+                <input type="email" id="donor-email" name="donor-email" required>
+    
+                <label for="donor-message">Message (Optional)</label>
+                <textarea id="donor-message" name="donor-message"></textarea>
+    
+                <label>Payment Method</label>
+                <div class="payment-options">
+                    <button type="button" id="paypal-btn">PayPal</button>
+                    <button type="button" id="vodafone-btn">Vodafone</button>
+                    <button type="button" id="mtn-btn">MTN</button>
+                </div>
+                <button type="submit" id="donate-btn">Donate</button>
+            </form>
+        </div>
+</body>
+</html>

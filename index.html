@@ -7,24 +7,28 @@
     <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css">
     <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/fontawesome.min.css">
     <link rel="shortcut icon" href="images/UFlogo.jpeg">
-    <script src="script.js"></script>
     <title>UFoundation</title>
 </head>
 <body>
-
+    <script src="script.js"></script>
     <header>
         <img src="images/UFlogo.jpeg" alt="uflogo">
         <nav>
-            <ul>
+            <ul id="nav-menu" class="hidden">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="drive.html">Drive</a></li>
                 <li><a href="programs.html">Programs</a></li>
                 <li><a href="blog-news.html">Blog/News</a></li>
-                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <button id="close-nav-btn"><i class="fa fa-close fa-2x" aria-hidden="true"></i></button>
+                
             </ul>
-            <i class="fa fa-navicon fa-2x" aria-hidden="true"></i>
-            <a href="http://"><button type="button" id="donate-btn">Donate Now</button></a>
+            <!-- <button id="nav-toggle" class="nav-btn"><i class="fa fa-navicon fa-2x" aria-hidden="true"></i></button> -->
+            
+            <button id="nav-toggle" class="nav-btn" aria-label="Toggle navigation menu"><i class="fa fa-navicon fa-2x" aria-hidden="true"></i></button>
+        
+            <a href="donate.html"><button type="button" id="donate-btn">Donate Now</button></a>
             
         </nav>
     </header>
@@ -37,8 +41,8 @@
             <div class="conts">
                 <h1><span id="wlc">Welcome to You Foundations</span><br>where you get to <span id="tagline">"Be You, do You, and no one else"</span></h1>
                 <p>We Empower marginalized communities<br> through education, health and advocacy.</p>
-                <a href="#" class="bttns"><button id="learn-more-btn">Get Involved</button></a><br>
-                <a href="#" class="bttns"><button id="donate-bttn">Make a Donation</button></a>
+                <a href="signup.html" class="bttns"><button id="learn-more-btn">Get Involved</button></a><br>
+                <a href="donate.html" class="bttns"><button id="donate-bttn">Make a Donation</button></a>
                 
             </div>
         </section>
@@ -139,19 +143,18 @@
             </div>
             <div class="contact-infos">
                 <h3>Contact Us</h3>
-                <a href="http://"><i class="fab fa-facebook" aria-hidden="true" fa-2x></i>Facebook</a>
-                <a href="http://"><i class="fab fa-instagram" aria-hidden="true"></i> Instagram</a>
-                <a href="http://"><i class="fab fa-twitter" aria-hidden="true"></i> Twitter</a>
-                <a href="http://"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
-                <a href="tel:+233599489913"><i class="fa fa-phone" aria-hidden="true"></i>+233 599 489 913</a>
-                <a href="mailto:hashesed@gmail.com">hashesed@gmail.com</a>
-    
+                <a href="http://"><i class="fab fa-facebook fa-1x" aria-hidden="true"></i>  Facebook</a>
+                <a href="http://"><i class="fab fa-instagram fa-1.5x" aria-hidden="true"></i>  Instagram</a>
+                <a href="http://"><i class="fab fa-twitter fa-1.5x" aria-hidden="true"></i>  Twitter</a>
+                <a href="http://"><i class="fab fa-linkedin fa-1.5x" aria-hidden="true"></i>  LinkedIn</a>
+                <a href="tel:+233599489913"><i class="fa fa-phone fa-1.5x" aria-hidden="true"></i>+233 599 489 913</a>
+                <a href="mailto:hashesed@gmail.com"><i class="fa fa-mail-bulk"></i> hashesed@gmail.com</a>
                 <h4>Address: 123 Foundations Street, city, Country</h4>
             </div>
             
             <div class="volunts">
-                <a id="involvement" href="http://">Get Involved</a>
-                <a id="donation" href="http://">DONATE</a>
+                <a id="involvement" href="signup.html">Get Involved</a>
+                <a id="donation" href="donate.html">DONATE</a>
             </div>
         </div>
         <div class="copyright">

@@ -8,17 +8,17 @@ body{
 header{
     background: linear-gradient(to right,rgba(255, 255, 255, 0.8), rgba(247, 34, 165, 0.79),rgba(74, 244, 253, 0.6));
     color: white;
-    padding: 1em;
+    padding: 1em 3em 2em 1.5em;
     display: flex;
     gap: 6cm;
     //font-size: 2em;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    margin-bottom: 1em;
+    margin: 0em 0em 1em 0em;
     border-right: 1px solid rgba(74, 244, 250, 0.7);
     border-bottom: 5px solid rgba(74, 244, 250, 0.7);
-    overflow: hidden;
+    //overflow: hidden;
     position: fixed;
     //width: 100%;
     top: 0;
@@ -31,6 +31,7 @@ header{
 
     nav{
         float: right;
+        margin: 0em 0em 0em -4em;
 
         ul{
             list-style: none;
@@ -99,9 +100,13 @@ header{
                 }
 
             }
+
+            #close-nav-btn{
+                display: none;
+            }
         }
 
-        .fa{
+        .nav-btn{
             display: none;
             
         }
@@ -161,7 +166,7 @@ main{
         position: relative;
         width: 100%;
         height: 100vh;
-        overflow: hidden;
+        //overflow-x: hidden;
 
         video{
             position: absolute;
@@ -263,7 +268,9 @@ main{
 
     .contents{
         position: relative;
-        padding-top: 3em;
+        padding-top: 0.5em;
+        margin-top: 2em;
+
         // .slide-images{
         //     position: absolute;
         //     margin-top: 0;
@@ -300,7 +307,7 @@ main{
             position: absolute;
             margin-top: 0;
             width: 100%;
-            height: 100%;
+            height: 110%;
             overflow: hidden;
             z-index: -1;
 
@@ -315,7 +322,7 @@ main{
         }
         .slide{
             width: 100%;
-            height: 100vh;
+            height: 110vh;
             flex-shrink: 0;
         }
 
@@ -343,6 +350,7 @@ main{
             justify-content: center;
             gap: 1em;
             padding-bottom: 7em;
+            //background-color: blue;
             
             .ind-contents{
                 box-shadow: 3px 3px 4px whitesmoke;
@@ -390,26 +398,52 @@ footer{
         display: flex;
         flex-direction: column;
         gap: 1em;
+
+        h3{border: 3px solid rgb(255, 0, 255);
+            border-right: none;
+            border-bottom: none;
+            text-decoration: double;
+            width: 5cm;
+        }
+
         a{
             color: rgb(255, 0, 255);
             text-decoration: none;
 
+            &:hover{
+                text-decoration: overline;
+                box-shadow: -2px 3px 1px white;
+            }
         }
-        i{
+        .fab{
             color: rgb(255, 0, 255);
             text-decoration: none;
             font-size: 5em;
-            margin-right: 0.5em;
+            margin-left: 1em;
         }
     }
     .contact-infos{
         display: flex;
         flex-direction: column;
         gap: 1em;
+
+        h3{
+            border: 3px solid rgb(255, 0, 255);
+            border-right: none;
+            border-bottom: none;
+            text-decoration: double;
+            width: 5cm;
+        }
         
         a{
             color: rgb(255, 0, 255);
             text-decoration: none;
+            width: 5cm;
+
+            &:hover{
+                text-decoration: overline;
+                box-shadow: -2px 3px 1px white;
+            }
         }
     }
 
@@ -429,14 +463,26 @@ footer{
             background: rgba(225, 225, 225, 0.5);
             font-size: 3em;
             font-weight: 300;
-            border: solid;
+            border: solid rgb(9, 255, 0);
+            border-radius: 20px;
+            width: 7cm;
+
+            &:hover{
+                background: linear-gradient(rgba(202, 1, 252, 0.356), rgba(103, 181, 255, 0.349));
+            }
         }
 
         #donation{
             background: rgba(225, 225, 225, 0.5);
             font-size: 3em;
             font-weight: 300;
-            border: solid;
+            border: solid rgb(24, 253, 3);
+            border-radius: 20px;
+
+            &:hover{
+                background: linear-gradient(rgba(202, 1, 252, 0.356), rgba(103, 181, 255, 0.349));
+                
+            }
         }
 
     }
@@ -466,7 +512,7 @@ footer{
         align-items: center;
         justify-content: space-between;
         gap: 1em;
-        width: 90%;
+        width: 95%;
         position: relative;
 
         img {
@@ -475,7 +521,7 @@ footer{
             box-shadow:5px 5px 5px 8px rgba(255, 255, 255, 0.719);
         }
         nav {
-            margin-left: -3em;
+            margin-left: 1em;
             ul {
             gap: 1em;
             li {
@@ -501,8 +547,10 @@ footer{
         margin-top: -1cm;
         padding: 25px;
         .intro {
+            height: 110%;
+            padding: 1em;
             video {
-            height: 100vh;
+            height: 110%;
             }
             .conts {
             h1 {
@@ -525,12 +573,14 @@ footer{
         }
         .contents {
             height: inherit;
+            margin: 4em 0em 0em 0em;
+            
             .slide-images {
-            height: 100vh;
+            height: 130vh;
             }
             .slides {
             .slide {
-                height: 100vh;
+                height: 130vh;
             }
             .slide img {
                 height: 100%;
@@ -538,20 +588,38 @@ footer{
             }
             }
             .individual-contents {
-            margin-top: 2em;
-            display: grid;
-            grid-template-columns: repeat((3, 1fr));
-            gap: 1em;
-            text-align: center;
-            justify-content: center;
+                margin-top: 2em;
+                display: grid;
+                grid-template-columns: repeat((3, 1fr));
+                gap: 1em;
+                text-align: center;
+                justify-content: center;
+                padding: 1em;
 
-            .ind-contents {
-                background: linear-gradient(135deg, white, rgba(7, 7, 7, 0.479));
-                width: 7cm;
-                padding: 1em 2em 2em 2em;
-                box-shadow:4px 4px 4px 7px white;
-                
-            }
+                .ind-contents {
+                    overflow: hidden;
+                    background: linear-gradient(135deg, white, rgba(7, 7, 7, 0.479));
+                    width: 7cm;
+                    height: 5cm;
+                    padding: 1em 2em 2em 2em;
+                    box-shadow:4px 4px 4px 7px white;
+                    
+                    &:hover{
+                        overflow: visible;
+                        height: fit-content;
+                        position: absolute;
+                        z-index: 1000;
+                    }
+
+                    a{
+                        text-decoration: none;
+                        font-size: 1rem;
+                        h2{
+                            
+                        }
+                    }
+
+                }
             }
         }
     }
@@ -607,6 +675,7 @@ footer{
     header {
         padding: 1.5em;
         gap: 4em;
+        width: 100%;
         img {
             width: 4cm;
         }
@@ -616,13 +685,14 @@ footer{
             ul {
                 background: rgba(255, 255, 255, 0.719);
                 padding: 1em 0.5em 1em 0.5em;
-                margin: -3em 0em 0em 4em;
+                margin: -3em 0em 0em 1em;
                 gap: 1em;
+                border-radius: 20px;
             li {
                 font-size: 20px;
-                width: 4cm;
-                padding-top: 0.5em;
-                padding-bottom: 1em;
+                width: 3cm;
+                padding: 0.5rem 0.5em 0.5rem 0.5em;
+                
             }
             }
             #donate-btn {
@@ -638,8 +708,11 @@ footer{
         margin-top: -1cm;
         //padding: 10px;
         .intro {
+            height: 100%;
+            width: 100%;
             video {
-            height: 80vh;
+            height: 100vh;
+            width: 100%;
             }
             .conts {
             h1 {
@@ -661,26 +734,36 @@ footer{
         }
         .contents {
             width: 100%;
-            margin-top: -4cm;
+            margin-top: 2cm;
             .slide-images {
-            height: 120vh;
+            height: 125vh;
+            width: 100%;
             }
             .slides {
+                width: 100%;
                 .slide {
-                    height: 120vh;
+                    height: 125vh;
+                    width: 100%;
                 }
                 .slide img {
                     height: 100%;
+                    width: 100%;
                 }
             }
             .individual-contents {
-                margin-top: 1.5em;
+                margin-top: 0.5em;
                 margin-left: 2em;
                 .ind-contents {
                     width: 6cm;
+                    height: 4cm;
                     margin-top: 1em;
                     padding: 1em 1.5em 1.5em 1.5em;
                     
+                    &:hover{
+                        p{
+                            overflow: visible;
+                        }
+                    }
 
                     a{
                        // text-decoration: none;
@@ -694,6 +777,7 @@ footer{
     }
 
     footer {
+        width: 92%;
         padding: 1.5em 4em 1.5em 4em;
         .footer-contents {
             flex-direction: row;
@@ -715,6 +799,8 @@ footer{
         }
         .volunts {
             gap: 1em;
+            margin-right: 2em;
+            //margin-left: -3em;
             a {
             font-size: 18px;
             }
@@ -750,16 +836,15 @@ footer{
         }
         nav {
             ul {
-            gap: 1em;
+            gap: 0.5em;
             background: rgba(245, 245, 245, 0.623);
             padding: 1em 0.5em 1em 0.5em;
-            margin: 0rem 0em 0em 2.5em;
+            margin: 0rem 0em 0em 1rem;
 
             li {
                 font-size: 18px;
-                width: 3cm;
-                padding-top: 0.3em;
-                padding-bottom: 0.7em;
+                width: 2.5cm;
+                padding: 0.3rem 0.5em 0.5rem 0.5em;
             }
             }
             #donate-btn {
@@ -777,7 +862,7 @@ footer{
         .intro {
 
             video {
-            height: 75vh;
+            height: 100vh;
             }
             .conts {
             h1 {
@@ -799,26 +884,27 @@ footer{
             }
         }
         .contents {
-            margin-top: -13em;
+            margin-top: 1cm;
             .slide-images {
-            height: 95vh;
+            height: 120vh;
+            width: 100%;
             }
             .slides {
             .slide {
-                height: 95vh;
+                height: 120vh;
             }
             .slide img {
                 height: 100%;
             }
             }
             .individual-contents {
-            margin-top: 1.5em;
+            margin-top: -3em;
             margin-left: 1em;
             padding-top: 5em;
             .ind-contents {
                 width: 5cm;
                 padding: 0.7em 2em 1.5em 0em;
-                margin-top: 3em;
+                margin-top: 0.5rem;
                 box-shadow: 3px 3px 5px rgba(238, 44, 238, 0.74);
                 p{
                     display: none;
@@ -829,12 +915,12 @@ footer{
     }
 
     footer {
-        width: 85%;
+        width: 88%;
         background-size: cover;
         padding: 1.5em 4em 1.5em 4em;
         .footer-contents {
             flex-direction: row;
-            gap: 4em;
+            gap: 1em;
         }
         .links {
             gap: 1em;
@@ -854,16 +940,17 @@ footer{
         .volunts {
             gap: 1em;
             margin-left: 1em;
-            margin-bottom: -2em;
+            margin-bottom: -3em;
             a {
             font-size: 18px;
             }
             #involvement {
-            font-size: 2.5em;
+            font-size: 2em;
             margin-right: -2em;
+            width: 5cm;
             }
             #donation {
-            font-size: 2.5em;
+            font-size: 2em;
             }
         }
         .copyright {
@@ -877,13 +964,21 @@ footer{
 
   /* Mobile devices */
 @media only screen and (max-width: 480px) {
+    // *{
+    //     margin: none;
+    // }
     body {
         font-size: 14px;
+        background-size: cover;
+        margin: none;
     }
 
     header {
-        padding: 0.5em;
+        padding: 0.5em 1em 0em 2em;
         gap: 2em;
+        width: 12cm;
+        margin: 0em 0em 0em 0.5em;
+        
         img {
             width: 5cm;
             float: left;
@@ -891,40 +986,125 @@ footer{
             margin-left: -15em;
         }
         nav {
-            ul {
-                background: none;
+            // .hidden{
+            //     display: none;
+            // }
+            #nav-menu {
+                opacity: 0;
                 display: none;
+                flex-direction: column;
+                gap: 3em;
+                background: rgba(2, 6, 187, 0.431);
+                position: fixed;
+                z-index: 1000;
+                top: 2em;
+                right: -250px;
+                height: 100vh;
+                width: 5cm;
+                text-align: center;
+                align-items: center;
+                border-radius: 20px 0px 0px 10px;
+                pointer-events: none;
+
+                &.open {
+                    right: 0;
+                    opacity: 1;
+                    pointer-events: auto;
+                    display: flex;
+                    animation: slide-in 2s ease forwards;  /* Apply custom animation */
+                }
+
+                &.close {
+                        animation: slide-out 2s ease forwards;                    
+                }
+                
+                @keyframes slide-in {
+                    from {
+                        right: -250px;
+                        opacity: 0;
+                    }
+                    to {
+                        right: 0;
+                        opacity: 1;
+                    }
+                }
+
+                @keyframes slide-out {
+                    from {
+                        right: 0;
+                        opacity: 1;
+                    }
+                    to {
+                        right: -250px;
+                        opacity: 0;
+                    }
+                }
                 
                 li {
                     font-size: 16px;
                     width: 2cm;
-                    padding-top: 0.2em;
-                    padding-bottom: 0.5em;
+                    padding: 0.2em;
+                    display: block;
+                    
+                }
+                #close-nav-btn{
+                    display: block;
+                    background: transparent;
+                    border-radius: 300px;
+                    border-color: transparent;
+                    color: white;
+                    
+                    &:hover{
+                        border-color: white;
+                        color: blue;
+                        background: rgba(255, 255, 255, 0.671);
+                    }
                 }
             }
 
-            .fa{
+            .nav-btn{
                 display: block;
                 float: right;
-                margin: -6em -5em 0em 0em;
+                margin: -13em -7em 0em 0em;
+                color: white;
+                background: none;
+                border: none;
+                cursor: pointer;
             }
 
             #donate-btn {
-            font-size: 20px;
-            width: 4cm;
-            margin-top: 0.5em;
-            float: right;
-            margin: -2em -7em 0em 0em;
+                font-size: 20px;
+                width: 4cm;
+                float: right;
+                margin: -4em -7em 0em 5em;
             }
         }
     }
 
+
+// @media only screen and (min-width: 481px) {
+//         #nav-menu {
+//             display: flex;
+//             position: static;
+//             right: auto;
+//             top: auto;
+//             height: auto;
+//             width: auto;
+//         }
+    
+//         .nav-btn {
+//             display: none;
+//         }
+//     }
+
+
+
     main {
-        margin-top: -.8cm;
+        margin-top: 0em;
         padding: 10px;
         .intro {
             video {
-            height: 60vh;
+            height: 70vh;
             }
             .conts {
             h1 {
@@ -944,58 +1124,64 @@ footer{
             #donate-bttn {
                 font-size: 20px;
                 float: right;
+                margin: 1em 2em 1em 0em;
             }
             }
         }
         .contents {
-                margin-top: -18em;
+            text-align: center;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            margin-top: 6em;
+            .slide-images {
+                height: 170vh;
+            }
 
-                .slide-images {
-                height: 90vh;
+            .slides {
+                .slide {
+                    height: 170vh;
                 }
-
-                .slides {
-                    .slide {
-                        height: 100vh;
-                    }
-                    .slide img {
-                        height: 100%;
-                    }
+                .slide img {
+                    height: 100%;
                 }
+            }
 
-                .individual-contents {
-                    display: flex;
-                    flex-direction: column;
-                    margin-top: 1em;
-                    .ind-contents {
-                        background: none;
-                        width: 6cm;
-                        margin-top: 0em;
-                        margin-bottom: -1em;
-                        padding: 0.1em 4em 0.1em 0.1em;
-                        box-shadow: none;
+            .individual-contents {
+                align-items: center;
+                display: flex;
+                gap: 2.5em;
+                flex-direction: column;
+                margin-top: -6em 0em 0em 0em;
+                .ind-contents {
+                    background: none;
+                    width: 7cm;
+                    margin: -3em 0em -4em 0em;
+                    padding: 0.1em 2em 0.1em 0.1em;
+                    box-shadow: none;
 
-                        a{
-                            text-decoration: none;
-                            h2{
-                                color: rgb(127, 196, 252);
-                                box-shadow: 2px 2px 4px rgba(235, 90, 248, 0.5);
-                            }
-                            
-                            p{
-                                display: none;
-                            }
+                    a{
+                        text-decoration: none;
+                        h2{
+                            color: rgb(127, 196, 252);
+                            box-shadow: 2px 2px 4px rgba(235, 90, 248, 0.5);
+                        }
+                        
+                        p{
+                            display: none;
                         }
                     }
+                }
             }
         }
     }
     
 
     footer {
-        margin-top: -7em;
+        margin-top: 0em;
         padding: 1em 3em 1em 3em;
         border-radius: 40px 40px 15px 15px;
+        background-size: cover;
         .footer-contents {
             //flex-direction: column;
             display: grid;
@@ -1011,7 +1197,7 @@ footer{
             }
         }
         .contact-infos {
-            margin-left: -3em;
+            margin-left: -4.5em;
             gap: 0.5em;
             a {
             font-size: 16px;
