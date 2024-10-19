@@ -23,6 +23,7 @@ header{
     //width: 100%;
     top: 0;
     z-index: 999;
+    width: 100%;
 
     img{
         border-radius: 10px;
@@ -604,12 +605,12 @@ footer{
                     padding: 1em 2em 2em 2em;
                     box-shadow:4px 4px 4px 7px white;
                     
-                    &:hover{
-                        overflow: visible;
-                        height: fit-content;
-                        position: absolute;
-                        z-index: 1000;
-                    }
+                    // &:hover{
+                    //     overflow: visible;
+                    //     height: fit-content;
+                    //     position: absolute;
+                    //     z-index: 1000;
+                    // }
 
                     a{
                         text-decoration: none;
@@ -759,11 +760,11 @@ footer{
                     margin-top: 1em;
                     padding: 1em 1.5em 1.5em 1.5em;
                     
-                    &:hover{
-                        p{
-                            overflow: visible;
-                        }
-                    }
+                    // &:hover{
+                    //     p{
+                    //         overflow: visible;
+                    //     }
+                    // }
 
                     a{
                        // text-decoration: none;
@@ -983,7 +984,7 @@ footer{
             width: 5cm;
             float: left;
             height: 5cm;
-            margin-left: -15em;
+            margin-left: -20em;
         }
         nav {
             // .hidden{
@@ -1065,7 +1066,7 @@ footer{
             .nav-btn{
                 display: block;
                 float: right;
-                margin: -13em -7em 0em 0em;
+                margin: -13em -3em 0em 0em;
                 color: white;
                 background: none;
                 border: none;
@@ -1073,8 +1074,8 @@ footer{
             }
 
             #donate-btn {
-                font-size: 20px;
-                width: 4cm;
+                font-size: 15px;
+                width: 3.5cm;
                 float: right;
                 margin: -4em -7em 0em 5em;
             }
@@ -1102,9 +1103,12 @@ footer{
     main {
         margin-top: 0em;
         padding: 10px;
+        width: 100%;
         .intro {
+            width: 100%;
             video {
             height: 70vh;
+            width: 100%;
             }
             .conts {
             h1 {
@@ -1133,32 +1137,44 @@ footer{
             justify-content: center;
             justify-items: center;
             align-items: center;
-            margin-top: 6em;
+            margin-top: 7em;
+            width: 100%;
+            max-width: 100%;
             .slide-images {
-                height: 170vh;
+                height: 150vh;
+                width: 100%;
+                max-width: 100%;
             }
 
             .slides {
                 .slide {
-                    height: 170vh;
+                    height: 150vh;
+                    width: 100%;
+                    max-width: 100%;
                 }
                 .slide img {
                     height: 100%;
+                    width: 100%;
+                    max-width: 100%;
                 }
             }
 
             .individual-contents {
                 align-items: center;
                 display: flex;
-                gap: 2.5em;
+                gap: 0.5em;
                 flex-direction: column;
                 margin-top: -6em 0em 0em 0em;
+                max-width: 100%;
+                align-self: center;
                 .ind-contents {
                     background: none;
-                    width: 7cm;
-                    margin: -3em 0em -4em 0em;
+                    width: 70%;
+                    margin: 0em 0em -4em 0em;
                     padding: 0.1em 2em 0.1em 0.1em;
                     box-shadow: none;
+                    align-self: center;
+                    //max-width: 100%;
 
                     a{
                         text-decoration: none;
@@ -1178,10 +1194,11 @@ footer{
     
 
     footer {
-        margin-top: 0em;
+        margin-top: 2em;
         padding: 1em 3em 1em 3em;
         border-radius: 40px 40px 15px 15px;
         background-size: cover;
+        width: 100%;
         .footer-contents {
             //flex-direction: column;
             display: grid;
