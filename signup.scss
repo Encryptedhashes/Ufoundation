@@ -72,3 +72,44 @@ button {
 button:hover {
     background-color: rgba(231, 3, 252, 0.555);
 }
+
+
+
+// Media Queries for Responsiveness
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 0.5em;
+    }
+
+    .signup-form {
+        padding: 1.5em;
+        max-width: 90%; // Full width on smaller screens
+    }
+
+    nav ul {
+        flex-direction: column; // Stack items vertically
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5em 0; // Adjust margin for stacked items
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    body {
+        background-color: #f0f0f0; // Change background for smaller screens
+    }
+
+    header {
+        font-size: 14px; // Smaller font size for mobile
+    }
+
+    .signup-form {
+        padding: 1em;
+    }
+
+    #signup-btn {
+        font-size: 14px; // Adjust button font size for mobile
+    }
+}

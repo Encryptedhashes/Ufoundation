@@ -120,3 +120,78 @@ p {
     font-weight: 500;
 }
 
+
+
+// Media Queries for Responsiveness
+@media only screen and (max-width: 1200px) {
+    header {
+        padding: 1.5em;
+    }
+
+    .donation-form {
+        padding: 1.5em;
+        max-width: 90%; // Full width on smaller screens
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    nav ul {
+        flex-direction: column; // Stack items vertically
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5em 0; // Adjust margin for stacked items
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 1em;
+    }
+
+    .donation-form {
+        padding: 1em;
+    }
+
+    h2 {
+        font-size: 1.5em; // Slightly smaller heading
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .donation-form {
+        padding: 0.8em;
+    }
+
+    #donate-btn {
+        font-size: 14px; // Adjust button font size for mobile
+    }
+
+    footer {
+        padding: 1em;
+    }
+
+    .footer-contents {
+        flex-direction: column; // Stack footer contents
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    body {
+        font-size: 14px; // Smaller font size for mobile
+    }
+
+    header {
+        font-size: 16px; // Smaller header font size
+    }
+
+    .donation-form {
+        padding: 0.5em;
+    }
+
+    h2 {
+        font-size: 1.2em; // Smaller heading for mobile
+    }
+}

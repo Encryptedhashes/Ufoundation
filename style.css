@@ -12,7 +12,7 @@ header {
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  margin: 0em 0em 1em 0em;
+  margin: 0em 0em 1em -0.5em;
   border-right: 1px solid rgba(74, 244, 250, 0.7);
   border-bottom: 5px solid rgba(74, 244, 250, 0.7);
   position: fixed;
@@ -144,13 +144,13 @@ header nav #donate-btn:hover {
 }
 
 main {
-  margin-top: 4cm;
   padding: 15px;
+  margin: 8em 0em 0em -2em;
 }
 
 main .intro {
   position: relative;
-  width: 100%;
+  width: 101.8%;
   height: 100vh;
 }
 
@@ -251,6 +251,7 @@ main .contents {
   position: relative;
   padding-top: 0.5em;
   margin-top: 2em;
+  width: 101.8%;
 }
 
 main .contents .slide-images {
@@ -344,6 +345,8 @@ footer {
   border-radius: 100px 100px 0px 0px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  margin: 7em 0em 0em -0.55em;
+  width: 83.8%;
 }
 
 footer .footer-contents {
@@ -454,7 +457,6 @@ footer .copyright {
 @media only screen and (max-width: 1200px) {
   body {
     font-size: 20px;
-    background-size: cover;
   }
   header {
     padding: 2em;
@@ -465,9 +467,12 @@ footer .copyright {
     gap: 1em;
     width: 95%;
     position: relative;
+    margin: 0em 0em 0em -0.5em;
+    width: 25cm;
   }
   header img {
     width: 15cm;
+    height: 6cm;
     border-radius: 30px;
     box-shadow: 5px 5px 5px 8px rgba(255, 255, 255, 0.719);
   }
@@ -478,8 +483,8 @@ footer .copyright {
     gap: 1em;
   }
   header nav ul li {
-    font-size: 32px;
-    width: 4.4cm;
+    font-size: 24px;
+    width: 3.5cm;
     padding-top: 0.2em;
     padding-bottom: .2em;
   }
@@ -493,12 +498,14 @@ footer .copyright {
     box-shadow: 4px 4px 4px 6px #fd04b3;
   }
   main {
-    margin-top: -1cm;
+    margin: -1em 0em 0em -2em;
     padding: 25px;
+    width: 100%;
   }
   main .intro {
     height: 110%;
     padding: 1em;
+    width: 26.2cm;
   }
   main .intro video {
     height: 110%;
@@ -521,7 +528,8 @@ footer .copyright {
   }
   main .contents {
     height: inherit;
-    margin: 4em 0em 0em 0em;
+    margin: 5em 0em 0em 0em;
+    width: 27.3cm;
   }
   main .contents .slide-images {
     height: 130vh;
@@ -531,6 +539,7 @@ footer .copyright {
   }
   main .contents .slides .slide img {
     height: 100%;
+    width: 100%;
   }
   main .contents .individual-contents {
     margin-top: 2em;
@@ -546,7 +555,7 @@ footer .copyright {
     background: linear-gradient(135deg, white, rgba(7, 7, 7, 0.479));
     width: 7cm;
     height: 5cm;
-    padding: 1em 2em 2em 2em;
+    padding: 1em 1em 1em 1em;
     box-shadow: 4px 4px 4px 7px white;
   }
   main .contents .individual-contents .ind-contents a {
@@ -555,6 +564,8 @@ footer .copyright {
   }
   footer {
     padding: 2em 5em 2em 5em;
+    margin: 3em 0em 0em -0.5em;
+    width: 22cm;
   }
   footer .footer-contents {
     flex-direction: row;
@@ -600,7 +611,8 @@ footer .copyright {
   header {
     padding: 1.5em;
     gap: 4em;
-    width: 100%;
+    margin: 0em 0em 0em -0.5em;
+    width: 26.12cm;
   }
   header img {
     width: 4cm;
@@ -629,6 +641,7 @@ footer .copyright {
   main .intro {
     height: 100%;
     width: 100%;
+    padding: 0em 0.8em 0em 3em;
   }
   main .intro video {
     height: 100vh;
@@ -650,8 +663,9 @@ footer .copyright {
     font-size: 24px;
   }
   main .contents {
-    width: 100%;
-    margin-top: 2cm;
+    width: 27.62cm;
+    margin-top: 3cm;
+    padding: 0em 0em 0em 0em;
   }
   main .contents .slide-images {
     height: 125vh;
@@ -729,7 +743,7 @@ footer .copyright {
   header {
     padding: 1em;
     gap: 3em;
-    width: 100%;
+    width: 26.5cm;
   }
   header img {
     width: 7cm;
@@ -755,6 +769,9 @@ footer .copyright {
     margin-top: -2em;
     padding: 15px;
   }
+  main .intro {
+    width: 26cm;
+  }
   main .intro video {
     height: 100vh;
   }
@@ -775,7 +792,7 @@ footer .copyright {
     font-size: 24px;
   }
   main .contents {
-    margin-top: 1cm;
+    margin-top: 5.5cm;
   }
   main .contents .slide-images {
     height: 120vh;
@@ -793,7 +810,7 @@ footer .copyright {
     padding-top: 5em;
   }
   main .contents .individual-contents .ind-contents {
-    width: 5cm;
+    width: 7cm;
     padding: 0.7em 2em 1.5em 0em;
     margin-top: 0.5rem;
     box-shadow: 3px 3px 5px rgba(238, 44, 238, 0.74);
@@ -802,7 +819,7 @@ footer .copyright {
     display: none;
   }
   footer {
-    width: 88%;
+    width: 24cm;
     background-size: cover;
     padding: 1.5em 4em 1.5em 4em;
   }
@@ -852,12 +869,15 @@ footer .copyright {
     font-size: 14px;
     background-size: cover;
     margin: none;
+    justify-content: center;
+    align-content: center;
+    padding: 0em 0em 0em -5em;
   }
   header {
     padding: 0.5em 1em 0em 2em;
     gap: 2em;
-    width: 12cm;
-    margin: 0em 0em 0em 0.5em;
+    width: 12.5cm;
+    margin: 0em 0em 0em -0.7em;
   }
   header img {
     width: 5cm;
@@ -874,7 +894,7 @@ footer .copyright {
     position: fixed;
     z-index: 1000;
     top: 2em;
-    right: -250px;
+    right: -100px;
     height: 100vh;
     width: 5cm;
     text-align: center;
@@ -887,11 +907,12 @@ footer .copyright {
     opacity: 1;
     pointer-events: auto;
     display: flex;
-    animation: slide-in 2s ease forwards;
+    animation: slide-in 1s ease forwards;
     /* Apply custom animation */
   }
   header nav #nav-menu.close {
-    animation: slide-out 2s ease forwards;
+    right: -100px;
+    animation: slide-out 1s ease forwards;
   }
   @keyframes slide-in {
     from {
@@ -947,12 +968,13 @@ footer .copyright {
     margin: -4em -7em 0em 5em;
   }
   main {
-    margin-top: 0em;
     padding: 10px;
     width: 100%;
+    margin: -1em 0em 0em -1.3em;
   }
   main .intro {
     width: 100%;
+    padding: 0em 3.4em 0em 0em;
   }
   main .intro video {
     height: 70vh;
@@ -982,17 +1004,19 @@ footer .copyright {
     justify-content: center;
     justify-items: center;
     align-items: center;
-    margin-top: 7em;
+    margin: 10em 0em 0em 0em;
     width: 100%;
     max-width: 100%;
+    padding: 0em 3.56em 0em 0em;
+    height: 100;
   }
   main .contents .slide-images {
-    height: 150vh;
+    height: 155vh;
     width: 100%;
     max-width: 100%;
   }
   main .contents .slides .slide {
-    height: 150vh;
+    height: 155vh;
     width: 100%;
     max-width: 100%;
   }
@@ -1006,15 +1030,15 @@ footer .copyright {
     display: flex;
     gap: 0.5em;
     flex-direction: column;
-    margin-top: -6em 0em 0em 0em;
+    margin: -7em -5em 0em 0em;
     max-width: 100%;
     align-self: center;
   }
   main .contents .individual-contents .ind-contents {
     background: none;
-    width: 70%;
+    width: 85%;
     margin: 0em 0em -4em 0em;
-    padding: 0.1em 2em 0.1em 0.1em;
+    padding: 0.1em 1em 0.1em 0.1em;
     box-shadow: none;
     align-self: center;
   }
@@ -1029,11 +1053,13 @@ footer .copyright {
     display: none;
   }
   footer {
-    margin-top: 2em;
+    margin: 4em 0em 0em 1em;
     padding: 1em 3em 1em 3em;
     border-radius: 40px 40px 15px 15px;
     background-size: cover;
-    width: 100%;
+    width: 11.9cm;
+    align-self: center;
+    justify-self: center;
   }
   footer .footer-contents {
     display: grid;
@@ -1051,13 +1077,14 @@ footer .copyright {
   footer .contact-infos {
     margin-left: -4.5em;
     gap: 0.5em;
+    margin: 0em 0em 0em 2em;
   }
   footer .contact-infos a {
     font-size: 16px;
   }
   footer .volunts {
     gap: 0.5em;
-    margin: -1em 2em 0em 1em;
+    margin: -1em 2em 0em 2em;
   }
   footer .volunts a {
     font-size: 16px;
@@ -1073,5 +1100,311 @@ footer .copyright {
   }
   footer .copyright {
     font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: whitesmoke;
+    background-size: cover;
+  }
+  header {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(247, 34, 165, 0.79), rgba(74, 244, 253, 0.6));
+    color: white;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin: 0em 0em 1em -0.8em;
+    position: relative;
+    top: 0;
+    z-index: 999;
+    width: 10.9cm;
+    height: 5cm;
+  }
+  header img {
+    border-radius: 10px;
+    width: 50%;
+    margin: 0em 0em 0em -5.5cm;
+  }
+  header nav {
+    width: 100%;
+    margin: 1em 0;
+  }
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+  }
+  header nav ul li {
+    background: linear-gradient(45deg, rgba(25, 125, 155, 0.7), rgba(225, 225, 255, 0.6));
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    padding: 0.5em;
+    width: auto;
+  }
+  header nav ul li:hover {
+    box-shadow: 2px 2px 4px rgba(3, 50, 207, 0.575);
+    animation: nav-background-color 1s ease-in-out infinite;
+  }
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  header nav .nav-btn {
+    display: block;
+    float: right;
+    margin: -10em 6em 0em 0em;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  header nav #donate-btn {
+    font-size: 15px;
+    width: 3.5cm;
+    float: right;
+    margin: -4em 3em 0em 5em;
+  }
+  main {
+    margin-top: -1cm;
+    width: 100%;
+  }
+  main .intro {
+    position: relative;
+    width: 11cm;
+    height: 100%;
+    padding: 0em 1em 0em  1.5em;
+    margin: 0em 0em 0em -1em;
+  }
+  main .intro video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 85vh;
+    pointer-events: none;
+    z-index: -1;
+  }
+  main .intro .conts h1 {
+    background: linear-gradient(to bottom, #1121fd, #fd04b3);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1000;
+    font-size: 30px;
+    text-align: center;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  main .intro .conts p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: left;
+    text-shadow: 2px 2px 2px #0408fd;
+    color: #ff078f;
+    letter-spacing: 1px;
+  }
+  main .intro .conts #learn-more-btn {
+    background: linear-gradient(45deg, #1121fd, #fd04b3);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 15px;
+    color: gold;
+    cursor: pointer;
+    margin-top: 1em;
+  }
+  main .intro .conts #learn-more-btn:hover {
+    box-shadow: 4px 4px 6px rgba(232, 243, 252, 0.747);
+  }
+  main .contents {
+    position: relative;
+    padding: 0em 3.9em 1em 1em;
+    margin: 11em 0em 0em -2em;
+    width: 100%;
+    height: 100vh;
+  }
+  main .contents .slide-images {
+    position: absolute;
+    margin-top: 0;
+    width: 100%;
+    height: 155vh;
+    overflow: hidden;
+    z-index: -1;
+  }
+  main .contents .slide-images .slides {
+    display: flex;
+    width: 100%;
+    height: 150vh;
+    transition: transform 5s ease-in-out;
+    animation: slide 30s ease-in-out infinite;
+  }
+  main .contents .slide-images .slide {
+    width: 100%;
+    height: 150vh;
+    flex-shrink: 0;
+  }
+  main .contents .slide-images .slide img {
+    width: 100%;
+    height: 160vh;
+    object-fit: cover;
+  }
+  @keyframes slide {
+    0%, 10% {
+      transform: translateX(0);
+    }
+    20%, 30% {
+      transform: translateX(-100%);
+    }
+    40%, 50% {
+      transform: translateX(-200%);
+    }
+    60%, 70% {
+      transform: translateX(-300%);
+    }
+    80%, 90% {
+      transform: translateX(-400%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  main .contents .individual-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.1rem;
+    padding-bottom: 7em;
+    margin: 0em -7em 0em 0em;
+  }
+  main .contents .individual-contents .ind-contents {
+    align-self: center;
+  }
+  main .contents .individual-contents .ind-contents a {
+    text-align: center;
+  }
+  main .contents .individual-contents .ind-contents a h2 {
+    padding: 0.5em;
+    background-color: rgba(255, 255, 255, 0.589);
+    border-radius: 10px;
+  }
+  main .contents .individual-contents .ind-contents a h2:hover {
+    background: rgba(255, 192, 203, 0.507);
+    box-shadow: 3px 3px 5px rgba(4, 8, 253, 0.562);
+  }
+  footer {
+    background: linear-gradient(to bottom, #e6e4e5, rgba(122, 122, 122, 0.514)), url("images/ytharmXrivaview.jpg") no-repeat;
+    background-size: cover;
+    padding: 2em 1em;
+    border-radius: 100px 100px 0px 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin: 22em 0em 0em 2.5em;
+    width: 10.8cm;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footer-contents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+  footer .links {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 0em 0em 0em 4em;
+    align-items: center;
+  }
+  footer .links h3 {
+    border: 3px solid magenta;
+    border-right: none;
+    border-bottom: none;
+    text-decoration: double;
+    width: 3cm;
+    max-width: 5cm;
+  }
+  footer .links a {
+    color: magenta;
+    text-decoration: none;
+  }
+  footer .links a:hover {
+    text-decoration: overline;
+    box-shadow: -2px 3px 1px white;
+  }
+  footer .contact-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 0em 0em 0em 1em;
+  }
+  footer .contact-infos h3 {
+    border: 3px solid magenta;
+    border-right: none;
+    border-bottom: none;
+    text-decoration: double;
+    width: 80%;
+    max-width: 5cm;
+  }
+  footer .contact-infos a {
+    color: magenta;
+    text-decoration: none;
+  }
+  footer .contact-infos a:hover {
+    text-decoration: overline;
+    box-shadow: -2px 3px 1px white;
+  }
+  footer .volunts {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em 0em 0em 5em;
+    align-items: center;
+  }
+  footer .volunts a {
+    color: gold;
+    text-decoration: none;
+  }
+  footer .volunts #involvement {
+    background: rgba(225, 225, 225, 0.5);
+    font-size: 2em;
+    font-weight: 300;
+    border: solid #09ff00;
+    border-radius: 20px;
+    width: 5cm;
+    max-width: 7cm;
+  }
+  footer .volunts #involvement:hover {
+    background: linear-gradient(rgba(202, 1, 252, 0.356), rgba(103, 181, 255, 0.349));
+  }
+  footer .volunts #donation {
+    background: rgba(225, 225, 225, 0.5);
+    font-size: 2em;
+    font-weight: 300;
+    border: solid #18fd03;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 7cm;
+  }
+  footer .volunts #donation:hover {
+    background: linear-gradient(rgba(202, 1, 252, 0.356), rgba(103, 181, 255, 0.349));
+  }
+  footer .copyright {
+    text-align: center;
+    margin-top: 2em;
+    font-size: 0.8em;
   }
 }
