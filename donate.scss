@@ -1,3 +1,7 @@
+// *{
+//     background-size: cover;
+//     margin: 0em 0em 0em 0em;
+// }
 body {
     background: linear-gradient(to top,rgba(128, 128, 128, 0.7), rgba(255, 255, 255, 0.9)), url('images/UFlogo.jpeg');
     background-size: cover;
@@ -6,25 +10,27 @@ body {
     //display: flex;
     //justify-content: center;
     //align-items: center;
+    width: 100%;
     height: 100vh;
     margin: 0;
-    padding: 3em;
+    padding: 2em 0em 0em 0em;
 }
 
 .back-to-home{
-    margin: 4em 0em 0em 2em;
+    margin: 0em 0em 0em 10em;
 }
 
 
 .donation-container {
-    margin: 0cm 0cm 0cm 8cm;
+    margin: 0cm 0cm 0cm 0cm;
     background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 450px;
+    width: 50%;
     text-align: center;
+    align-self: center;
+    justify-self: center;
 }
 
 h1 {
@@ -124,61 +130,281 @@ p {
 
 // Media Queries for Responsiveness
 @media only screen and (max-width: 1200px) {
-    header {
-        padding: 1.5em;
+    body {
+        height: 100vh;
+        margin: 0;
+        width: 100%;
     }
-
+    
+    .back-to-home {
+        margin: 0em 0em 0em 5em;
+    }
+    .donation-container {
+        width: 100%;
+        max-width: 50%;
+        height: 90vh;
+        text-align: center;
+        align-items: center;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    
     .donation-form {
-        padding: 1.5em;
-        max-width: 90%; // Full width on smaller screens
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .donation-form textarea,
+    .donation-form button {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        width: 80%;
+        align-self: center;
+    }
+    
+    .payment-options {
+        display: flex;
+        gap: 1em;
+        justify-content: space-around;
+    }
+    
+    
+    #paypal-btn{
+    
+        width: 80%;
+
+    }
+    
+    #vodafone-btn{
+        
+        width: 80%;
+    }
+    
+    #mtn-btn{
+        width: 80%;
+
+    }
+    
+    #donate-btn{
+        width: 80%;
+
     }
 }
 
 @media only screen and (max-width: 992px) {
-    nav ul {
-        flex-direction: column; // Stack items vertically
-        align-items: center;
+    body {
+        height: 100vh;
+        margin: 0;
+        padding: 3em;
     }
+    
+    
+    .donation-container {
+        width: 100%;
+        max-width: 50%;
+        height: 95vh;
+        text-align: center;
+        align-items: center;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    
+    .donation-form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .donation-form textarea,
+    .donation-form button {
+        margin-bottom: 15px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        width: 70%;
+        align-self: center;
+    }
+    
+    .payment-options {
+        display: flex;
+        gap: 1em;
+        justify-content: space-around;
+    }
+    
+    
+    #paypal-btn{
+    
+        width: 80%;
 
-    nav ul li {
-        margin: 0.5em 0; // Adjust margin for stacked items
+    }
+    
+    #vodafone-btn{
+        
+        width: 80%;
+    }
+    
+    #mtn-btn{
+        width: 80%;
+
+    }
+    
+    #donate-btn{
+        width: 80%;
+
     }
 }
 
+
 @media only screen and (max-width: 768px) {
-    header {
-        padding: 1em;
+    body {
+        height: 100vh;
+        margin: 0;
+        width: 100%;
     }
-
+    
+    
+    .donation-container {
+        width: 100%;
+        //max-width: 50%;
+        height: 95vh;
+        text-align: center;
+        align-items: center;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    
     .donation-form {
-        padding: 1em;
+        display: flex;
+        flex-direction: column;
     }
+    
+    .donation-form textarea,
+    .donation-form button {
+        margin-bottom: 15px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        width: 70%;
+        align-self: center;
+    }
+    
+    .payment-options {
+        display: flex;
+        gap: 1em;
+        justify-content: space-around;
+    }
+    
+    
+    #paypal-btn{
+    
+        width: 80%;
 
-    h2 {
-        font-size: 1.5em; // Slightly smaller heading
+    }
+    
+    #vodafone-btn{
+        
+        width: 80%;
+    }
+    
+    #mtn-btn{
+        width: 80%;
+
+    }
+    
+    #donate-btn{
+        width: 80%;
+
     }
 }
 
 @media only screen and (max-width: 480px) {
-    .donation-form {
-        padding: 0.8em;
+    body {
+        height: 100vh;
+        margin: 0em 0em 0em 0em;
+        width: 100%;
+        padding: 2em 0em 0em 0em;
     }
-
-    #donate-btn {
-        font-size: 14px; // Adjust button font size for mobile
+    
+    .back-to-home{
+        margin: 0em 0em 0em 2em;
     }
-
-    footer {
-        padding: 1em;
-    }
-
-    .footer-contents {
-        flex-direction: column; // Stack footer contents
+    
+    .donation-container {
+        width: 100%;
+        //max-width: 50%;
+        height: 90vh;
+        text-align: center;
         align-items: center;
+        align-self: center;
+        justify-self: center;
+        margin: 0em 0em 0em 0em;
+
+        h1{
+            font-size: rem;
+            margin: 0em;
+        }
+    }
+    
+    
+    .donation-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input{
+        height: 5px;
+    }
+    
+    .donation-form textarea,
+    .donation-form button {
+        margin-bottom: 15px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        width: 70%;
+        align-self: center;
+    }
+    
+    .payment-options {
+        display: flex;
+        gap: 1em;
+        justify-content: space-around;
+    }
+    
+    
+    #paypal-btn{
+    
+        width: 80%;
+
+    }
+    
+    #vodafone-btn{
+        
+        width: 80%;
+    }
+    
+    #mtn-btn{
+        width: 80%;
+
+    }
+    
+    #donate-btn{
+        width: 50%;
+        height: 2.5em;
+        font-size: 1rem;
+
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 320px) {
     body {
         font-size: 14px; // Smaller font size for mobile
     }
@@ -193,5 +419,26 @@ p {
 
     h2 {
         font-size: 1.2em; // Smaller heading for mobile
+    }
+
+    .payment-options {
+        display: flex;
+        gap: 0.3em;
+        justify-content: space-around;
+    }
+    #paypal-btn{
+        
+        width: 40%;
+
+    }
+    
+    #vodafone-btn{
+        
+        width: 40%;
+    }
+    
+    #mtn-btn{
+        width: 40%;
+
     }
 }

@@ -4,9 +4,6 @@ body {
     opacity: 1;
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    //display: flex;
-    //justify-content: center;
-    //align-items: center;
     height: 100vh;
     margin: 0;
     padding: 3em;
@@ -17,11 +14,11 @@ body {
 }
 
 .signup-container {
-    margin: 2cm 0cm 0cm 2cm;
+    margin: 0cm 0cm 0cm 0cm;
     background: linear-gradient(45deg, rgba(111, 196, 245, 0.7), rgba(251, 126, 255, 0.7));
     background-size: cover;
     opacity: 3;
-    padding: 20px;
+    //padding: 20px;
     align-self: center;
     justify-self: center;
     border-radius: 10px;
@@ -107,6 +104,41 @@ button:hover {
 
     .signup-form {
         padding: 1em;
+    }
+
+    #signup-btn {
+        font-size: 14px; // Adjust button font size for mobile
+    }
+}
+@media only screen and (max-width: 320px) {
+    body {
+        background-color: #f0f0f0; // Change background for smaller screens
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header {
+        font-size: 14px; // Smaller font size for mobile
+    }
+
+    .signup-container{
+        align-items: center;
+    }
+
+    .signup-form {
+        padding: 1em;
+        align-self: center;
+    }
+    
+    #name {
+        width: 80%;
+    }
+    #email {
+        width: 80%;
+    }
+    #password {
+        width: 80%;
     }
 
     #signup-btn {
