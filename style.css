@@ -194,6 +194,7 @@ main .intro .conts p {
   text-shadow: 2px 2px 2px #0408fd;
   color: #ff078f;
   letter-spacing: 2px;
+  margin-left: 2em;
 }
 
 main .intro .conts a {
@@ -415,8 +416,7 @@ footer .volunts {
   flex-direction: column;
   gap: 1em;
   margin-top: 3em;
-  margin-right: 10em;
-  margin-left: -10em;
+  margin: 0em 0em 0em 0em;
 }
 
 footer .volunts a {
@@ -458,28 +458,29 @@ footer .copyright {
   body {
     font-size: 20px;
     background-size: cover;
-    size: 100%;
+    width: 100%;
+    margin: 0em 0em 0em 0em;
+    padding: 0em 0em 0em 0em;
   }
   header {
-    padding: 2em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     gap: 1em;
-    width: 95%;
+    width: 100%;
     position: relative;
-    margin: 0em 0em 0em -0.5em;
-    width: 25cm;
+    padding: 0em 0em 0em 0em;
+    margin: 0em 0em 0em 0em;
   }
   header img {
-    width: 15cm;
-    height: 6cm;
+    width: 13cm;
+    height: 5cm;
     border-radius: 30px;
     box-shadow: 5px 5px 5px 8px rgba(255, 255, 255, 0.719);
   }
   header nav {
-    margin-left: 1em;
+    margin: 0em 0em 0em 0em;
   }
   header nav ul {
     gap: 1em;
@@ -493,24 +494,24 @@ footer .copyright {
   header nav #donate-btn {
     font-size: 35px;
     width: 7cm;
-    margin-top: 1.2em;
-    margin-right: 5em;
-    padding-top: 0.5em;
-    padding-bottom: .5em;
-    box-shadow: 4px 4px 4px 6px #fd04b3;
+    margin: 0.3em 0em 0em 0em;
+    padding: 0.2em 0em 0.1em 0em;
+    box-shadow: 2px 2px 3px #fd04b3;
   }
   main {
-    margin: -1em 0em 0em -2em;
-    padding: 25px;
+    margin: 0em 0em 0em 0em;
+    padding: 0em 0em 0em 0em;
     width: 100%;
   }
   main .intro {
     height: 110%;
-    padding: 1em;
-    width: 26.2cm;
+    margin: 0em 0em 0em 0em;
+    padding: 0em 0em 0em 0em;
+    width: 100%;
   }
   main .intro video {
     height: 110%;
+    width: 100%;
   }
   main .intro .conts h1 {
     font-size: 70px;
@@ -530,8 +531,8 @@ footer .copyright {
   }
   main .contents {
     height: inherit;
-    margin: 5em 0em 0em 0em;
-    width: 27.3cm;
+    margin: 4em 0em 0em 0em;
+    width: 100%;
   }
   main .contents .slide-images {
     height: 130vh;
@@ -565,12 +566,16 @@ footer .copyright {
     font-size: 1rem;
   }
   footer {
-    padding: 2em 5em 2em 5em;
-    margin: 3em 0em 0em -0.5em;
-    width: 22cm;
+    padding: 0em 0em 0em 0em;
+    margin: 6em 0em 0em 0em;
+    width: 100%;
   }
   footer .footer-contents {
+    align-items: center;
+    justify-content: center;
+    display: flex;
     flex-direction: row;
+    gap: 4em;
   }
   footer .links {
     gap: 1.5em;
@@ -583,7 +588,7 @@ footer .copyright {
   }
   footer .contact-infos {
     gap: 1.5em;
-    margin-left: 3em;
+    width: 8cm;
   }
   footer .contact-infos a {
     font-size: 20px;
@@ -596,6 +601,7 @@ footer .copyright {
   }
   footer .volunts #involvement {
     font-size: 3em;
+    width: fit-content;
   }
   footer .volunts #donation {
     font-size: 3em;
@@ -609,15 +615,18 @@ footer .copyright {
 @media only screen and (max-width: 992px) {
   body {
     font-size: 18px;
+    margin: 0em 0em 0em 0em;
+    padding: 0em 0em 0em 0em;
   }
   header {
     padding: 1.5em;
     gap: 4em;
-    margin: 0em 0em 0em -0.5em;
-    width: 26.12cm;
+    margin: 0em 0em 0em 0em;
+    padding: 0em 0em 0em 0em;
+    width: 100%;
   }
   header img {
-    width: 4cm;
+    width: 6cm;
   }
   header nav ul {
     background: rgba(255, 255, 255, 0.719);
@@ -638,12 +647,14 @@ footer .copyright {
   }
   main {
     width: 100%;
-    margin-top: -1cm;
+    margin: 0em 0em 0em 0em;
+    padding: 0em 0em 0em 0em;
   }
   main .intro {
     height: 100%;
     width: 100%;
-    padding: 0em 0.8em 0em 3em;
+    padding: 0em 0em 0em 0em;
+    margin: 0em 0em 0em 0em;
   }
   main .intro video {
     height: 100vh;
@@ -665,19 +676,19 @@ footer .copyright {
     font-size: 24px;
   }
   main .contents {
-    width: 27.62cm;
-    margin-top: 3cm;
+    width: 100%;
+    margin: 6em 0em 0em 0em;
     padding: 0em 0em 0em 0em;
   }
   main .contents .slide-images {
-    height: 125vh;
+    height: 135vh;
     width: 100%;
   }
   main .contents .slides {
     width: 100%;
   }
   main .contents .slides .slide {
-    height: 125vh;
+    height: 135vh;
     width: 100%;
   }
   main .contents .slides .slide img {
@@ -691,15 +702,15 @@ footer .copyright {
   main .contents .individual-contents .ind-contents {
     width: 6cm;
     height: 4cm;
-    margin-top: 1em;
+    margin: 1em 0em 0em 0em;
     padding: 1em 1.5em 1.5em 1.5em;
   }
   main .contents .individual-contents .ind-contents a p {
     text-decoration: none;
   }
   footer {
-    width: 92%;
-    padding: 1.5em 4em 1.5em 4em;
+    width: 100%;
+    padding: 0em 0em 0em 0em;
   }
   footer .footer-contents {
     flex-direction: row;
@@ -741,11 +752,14 @@ footer .copyright {
 @media only screen and (max-width: 768px) {
   body {
     font-size: 16px;
+    margin: 0em 0em 0em 0em;
+    padding: 0em 0em 0em 0em;
+    width: 100%;
   }
   header {
-    padding: 1em;
+    padding: 0em 0em 0em 0em;
     gap: 3em;
-    width: 26.5cm;
+    width: 100%;
   }
   header img {
     width: 7cm;
@@ -753,7 +767,7 @@ footer .copyright {
   header nav ul {
     gap: 0.5em;
     background: rgba(245, 245, 245, 0.623);
-    padding: 1em 0.5em 1em 0.5em;
+    padding: 0em 0em 0em 0.5em;
     margin: 0rem 0em 0em 1rem;
   }
   header nav ul li {
@@ -768,14 +782,14 @@ footer .copyright {
   }
   main {
     width: 100%;
-    margin-top: -2em;
-    padding: 15px;
+    margin: 0em 0em 0em 0em;
+    padding: 0em 0em 0em 0em;
   }
   main .intro {
-    width: 26cm;
+    width: 100%;
   }
   main .intro video {
-    height: 100vh;
+    height: 90vh;
   }
   main .intro .conts h1 {
     font-size: 36px;
@@ -794,36 +808,44 @@ footer .copyright {
     font-size: 24px;
   }
   main .contents {
-    margin-top: 5.5cm;
+    margin-top: 1em 0em 0em 0em;
+    padding: 0em 0em 0em 0em;
+    width: 100%;
   }
   main .contents .slide-images {
-    height: 120vh;
+    height: 130vh;
     width: 100%;
   }
   main .contents .slides .slide {
-    height: 120vh;
+    height: 130vh;
   }
   main .contents .slides .slide img {
     height: 100%;
   }
   main .contents .individual-contents {
-    margin-top: -3em;
-    margin-left: 1em;
-    padding-top: 5em;
+    margin: 0em 0em 0em 0em;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
   }
   main .contents .individual-contents .ind-contents {
-    width: 7cm;
-    padding: 0.7em 2em 1.5em 0em;
+    width: fit-content;
+    padding: 0.7em 0em 1.5em 0em;
     margin-top: 0.5rem;
     box-shadow: 3px 3px 5px rgba(238, 44, 238, 0.74);
+  }
+  main .contents .individual-contents .ind-contents a {
+    font-size: 13px;
   }
   main .contents .individual-contents .ind-contents p {
     display: none;
   }
   footer {
-    width: 24cm;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
     background-size: cover;
-    padding: 1.5em 4em 1.5em 4em;
+    padding: 0em 0em 0em 0em;
+    margin: 9em 0em 0em 0em;
   }
   footer .footer-contents {
     flex-direction: row;
@@ -839,6 +861,7 @@ footer .copyright {
     font-size: 3.5em;
   }
   footer .contact-infos {
+    width: 30%;
     gap: 1em;
   }
   footer .contact-infos a {
@@ -870,16 +893,17 @@ footer .copyright {
   body {
     font-size: 14px;
     background-size: cover;
-    margin: none;
+    margin: 0em 0em 0em 0em;
     justify-content: center;
     align-content: center;
-    padding: 0em 0em 0em -5em;
+    padding: 0em 0em 0em 0em;
+    width: 100%;
   }
   header {
-    padding: 0.5em 1em 0em 2em;
+    padding: 0em 0em 0em 0em;
     gap: 2em;
-    width: 12.5cm;
-    margin: 0em 0em 0em -0.7em;
+    width: 100%;
+    margin: 0em 0em 0em 0em;
   }
   header img {
     width: 5cm;
@@ -970,13 +994,14 @@ footer .copyright {
     margin: -4em -7em 0em 5em;
   }
   main {
-    padding: 10px;
     width: 100%;
-    margin: -1em 0em 0em -1.3em;
+    margin: 0em 0em 0em 0em;
+    padding: 0em 0em 0em 0em;
   }
   main .intro {
     width: 100%;
-    padding: 0em 3.4em 0em 0em;
+    padding: 0em 0em 0em 0em;
+    margin: 0em 0em 0em 0em;
   }
   main .intro video {
     height: 70vh;
@@ -984,10 +1009,11 @@ footer .copyright {
   }
   main .intro .conts h1 {
     font-size: 25px;
+    margin: 0.5em 0em 0em 1em;
   }
   main .intro .conts p {
     font-size: 15px;
-    margin-top: -.5em;
+    margin: 3em 0em 0em 1em;
   }
   main .intro .conts a {
     margin-left: 1cm;
@@ -1009,7 +1035,7 @@ footer .copyright {
     margin: 10em 0em 0em 0em;
     width: 100%;
     max-width: 100%;
-    padding: 0em 3.56em 0em 0em;
+    padding: 0em 0em 0em 0em;
     height: 100;
   }
   main .contents .slide-images {
@@ -1032,7 +1058,8 @@ footer .copyright {
     display: flex;
     gap: 0.5em;
     flex-direction: column;
-    margin: -7em -5em 0em 0em;
+    margin: 0em 0em 0em 0em;
+    padding: 0em 0em 0em 0em;
     max-width: 100%;
     align-self: center;
   }
@@ -1055,17 +1082,22 @@ footer .copyright {
     display: none;
   }
   footer {
-    margin: 4em 0em 0em 1em;
-    padding: 1em 3em 1em 3em;
-    border-radius: 40px 40px 15px 15px;
+    margin: 9em 0em 0em 0em;
+    padding: 0em 0em 0em 0em;
+    border-radius: 20px 20px 15px 15px;
     background-size: cover;
-    width: 11.9cm;
+    width: 100%;
     align-self: center;
     justify-self: center;
+    justify-content: center;
   }
   footer .footer-contents {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
   }
   footer .links {
     gap: 0.5em;
@@ -1079,7 +1111,11 @@ footer .copyright {
   footer .contact-infos {
     margin-left: -4.5em;
     gap: 0.5em;
-    margin: 0em 0em 0em 2em;
+    margin: 0em 0em 0em 0em;
+    width: 95%;
+  }
+  footer .contact-infos h4 {
+    width: 100%;
   }
   footer .contact-infos a {
     font-size: 16px;
@@ -1109,23 +1145,25 @@ footer .copyright {
   body {
     background-color: whitesmoke;
     background-size: cover;
+    margin: 0em 0em 0em 0em;
+    padding: 0em 0em 0em 0em;
   }
   header {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(247, 34, 165, 0.79), rgba(74, 244, 253, 0.6));
+    background: none;
     color: white;
-    padding: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    margin: 0em 0em 1em -0.8em;
+    margin: 0em 0em 0em 0em;
+    padding: 0em 0em 0em 0em;
     position: relative;
     top: 0;
     z-index: 999;
-    width: 10.9cm;
-    height: 5cm;
+    width: 100%;
+    height: 4cm;
   }
   header img {
     border-radius: 10px;
@@ -1167,7 +1205,7 @@ footer .copyright {
     display: block;
     float: right;
     margin: -10em 6em 0em 0em;
-    color: white;
+    color: black;
     background: none;
     border: none;
     cursor: pointer;
@@ -1179,15 +1217,16 @@ footer .copyright {
     margin: -4em 3em 0em 5em;
   }
   main {
-    margin-top: -1cm;
+    margin: 0em 0em 0em 0em;
+    padding: 0em 0em 0em 0em;
     width: 100%;
   }
   main .intro {
     position: relative;
-    width: 11cm;
-    height: 100%;
-    padding: 0em 1em 0em  1.5em;
-    margin: 0em 0em 0em -1em;
+    width: 100%;
+    height: 90vh;
+    padding: 0em 0em 0em  0em;
+    margin: 0em 0em 0em 0em;
   }
   main .intro video {
     position: absolute;
@@ -1195,7 +1234,7 @@ footer .copyright {
     left: 0;
     object-fit: cover;
     width: 100%;
-    height: 85vh;
+    height: 90vh;
     pointer-events: none;
     z-index: -1;
   }
@@ -1232,8 +1271,8 @@ footer .copyright {
   }
   main .contents {
     position: relative;
-    padding: 0em 3.9em 1em 1em;
-    margin: 11em 0em 0em -2em;
+    padding: 0em 0em 0em 0em;
+    margin: 1em 0em 0em 0em;
     width: 100%;
     height: 100vh;
   }
@@ -1241,25 +1280,25 @@ footer .copyright {
     position: absolute;
     margin-top: 0;
     width: 100%;
-    height: 155vh;
+    height: 105vh;
     overflow: hidden;
     z-index: -1;
   }
   main .contents .slide-images .slides {
     display: flex;
     width: 100%;
-    height: 150vh;
+    height: 105vh;
     transition: transform 5s ease-in-out;
     animation: slide 30s ease-in-out infinite;
   }
   main .contents .slide-images .slide {
     width: 100%;
-    height: 150vh;
+    height: 100vh;
     flex-shrink: 0;
   }
   main .contents .slide-images .slide img {
     width: 100%;
-    height: 160vh;
+    height: 105vh;
     object-fit: cover;
   }
   @keyframes slide {
@@ -1287,20 +1326,25 @@ footer .copyright {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.1rem;
-    padding-bottom: 7em;
-    margin: 0em -7em 0em 0em;
+    gap: 0rem;
+    padding: 0em 0em 0em 0em;
+    margin: 0em 0em 0em 0em;
   }
   main .contents .individual-contents .ind-contents {
     align-self: center;
+    margin: 0em 0em 0em 0em;
+    padding: 0em 0em 0em 0em;
+    height: 2cm;
   }
   main .contents .individual-contents .ind-contents a {
     text-align: center;
+    font-size: 13px;
+    padding: 0em 0em 0em 0em;
   }
   main .contents .individual-contents .ind-contents a h2 {
-    padding: 0.5em;
+    padding: 0.3em 0em 0.3em 0em;
     background-color: rgba(255, 255, 255, 0.589);
-    border-radius: 10px;
+    border-radius: 5px;
   }
   main .contents .individual-contents .ind-contents a h2:hover {
     background: rgba(255, 192, 203, 0.507);
@@ -1309,26 +1353,33 @@ footer .copyright {
   footer {
     background: linear-gradient(to bottom, #e6e4e5, rgba(122, 122, 122, 0.514)), url("images/ytharmXrivaview.jpg") no-repeat;
     background-size: cover;
-    padding: 2em 1em;
-    border-radius: 100px 100px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    margin: 22em 0em 0em 2.5em;
-    width: 10.8cm;
+    margin: 4em 0em 0em 0em;
+    padding: 0em 0em 0em 0em;
+    width: 100%;
     justify-content: center;
+    justify-items: center;
     align-items: center;
   }
   footer .footer-contents {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 0em;
     align-items: center;
+    align-self: center;
     justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    width: 100%;
   }
   footer .links {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    margin: 0em 0em 0em 4em;
+    margin: 0em 0em 0em 0em;
+    padding: 0em 0em 0em 0em;
     align-items: center;
   }
   footer .links h3 {
@@ -1342,6 +1393,7 @@ footer .copyright {
   footer .links a {
     color: magenta;
     text-decoration: none;
+    width: fit-content;
   }
   footer .links a:hover {
     text-decoration: overline;
@@ -1351,7 +1403,9 @@ footer .copyright {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    margin: 0em 0em 0em 1em;
+    margin: 0em 0em 0em 0em;
+    padding: 0em 0em 0em 0em;
+    width: 80%;
   }
   footer .contact-infos h3 {
     border: 3px solid magenta;
@@ -1364,6 +1418,7 @@ footer .copyright {
   footer .contact-infos a {
     color: magenta;
     text-decoration: none;
+    width: fit-content;
   }
   footer .contact-infos a:hover {
     text-decoration: overline;
@@ -1407,7 +1462,7 @@ footer .copyright {
   footer .copyright {
     text-align: center;
     margin-top: 2em;
-    font-size: 0.8em;
+    font-size: 1rem;
   }
 }
 
@@ -1557,27 +1612,27 @@ footer .copyright {
     position: absolute;
     margin-top: 0;
     width: 100%;
-    height: 130vh;
+    height: 100vh;
     overflow: hidden;
     z-index: -1;
   }
   main .contents .slide-images .slides {
     display: hidden;
     width: 100%;
-    height: 130vh;
+    height: 100vh;
     transition: transform 5s ease-in-out;
     animation: slide 30s ease-in-out infinite;
   }
   main .contents .slide-images .slide {
     display: hidden;
     width: 100%;
-    height: 130vh;
+    height: 100vh;
     flex-shrink: 0;
   }
   main .contents .slide-images .slide img {
     display: hidden;
     width: 100%;
-    height: 140vh;
+    height: 100vh;
     object-fit: cover;
   }
   @keyframes slide {
@@ -1611,8 +1666,9 @@ footer .copyright {
   }
   main .contents .individual-contents .ind-contents {
     align-self: center;
-    margin: -5em 0em 0em 0em;
+    margin: 0em 0em 0em 0em;
     padding: 0em 0em 0em 0em;
+    height: 1.8cm;
   }
   main .contents .individual-contents .ind-contents a {
     text-align: center;
@@ -1634,7 +1690,7 @@ footer .copyright {
     border-radius: 20px 20px 0px 0px;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    margin: 14em 0em 0em 0em;
+    margin: 1em 0em 0em 0em;
     width: 100%;
     justify-content: center;
     align-items: center;
