@@ -1590,6 +1590,7 @@ footer{
                 color: rgb(255, 0, 255);
                 text-decoration: none;
                 width: fit-content;
+                font-size: 1rem;
 
                 &:hover {
                     text-decoration: overline;
@@ -1602,7 +1603,7 @@ footer{
             display: flex;
             flex-direction: column;
             gap: 1em;
-            margin: 0em 0em 0em 0em;
+            margin: 0em 0em 0em -2em;
             padding: 0em 0em 0em 0em;
             width: 80%;
 
@@ -1619,6 +1620,7 @@ footer{
                 color: rgb(255, 0, 255);
                 text-decoration: none;
                 width: fit-content;
+                font-size: 1rem;
 
                 &:hover {
                     text-decoration: overline;
@@ -1641,12 +1643,13 @@ footer{
 
             #involvement {
                 background: rgba(225, 225, 225, 0.5);
-                font-size: 2em; // Adjusted font size for mobile
+                font-size: 1.5em; // Adjusted font size for mobile
                 font-weight: 300;
+                padding: 0em 0.5em 0em 0.5em;
                 border: solid rgb(9, 255, 0);
                 border-radius: 20px;
-                width: 5cm; // Responsive width
-                max-width: 7cm; // Limit max width
+                width: 100%; // Responsive width
+                max-width: 6cm; // Limit max width
 
                 &:hover {
                     background: linear-gradient(rgba(202, 1, 252, 0.356), rgba(103, 181, 255, 0.349));
@@ -1655,11 +1658,12 @@ footer{
 
             #donation {
                 background: rgba(225, 225, 225, 0.5);
-                font-size: 2em; // Adjusted font size for mobile
+                font-size: 1.6em; // Adjusted font size for mobile
                 font-weight: 300;
+                padding: 0em 0.5em 0em 0.5em;
                 border: solid rgb(24, 253, 3);
                 border-radius: 20px;
-                width: 80%; // Responsive width
+                width: 95%; // Responsive width
                 max-width: 7cm; // Limit max width
 
                 &:hover {
